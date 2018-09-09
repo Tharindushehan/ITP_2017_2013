@@ -46,7 +46,7 @@
             this.txtNoofadults = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
-            this.txtNic = new System.Windows.Forms.TextBox();
+            this.txtNIC = new System.Windows.Forms.TextBox();
             this.lblcusid = new System.Windows.Forms.Label();
             this.cmbMrMrs = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -160,6 +160,7 @@
             this.btnGeneratequotation.TabIndex = 8;
             this.btnGeneratequotation.Text = "Generate\r\nQuotation";
             this.btnGeneratequotation.UseVisualStyleBackColor = false;
+            this.btnGeneratequotation.Click += new System.EventHandler(this.btnGeneratequotation_Click);
             // 
             // btnHallDetails
             // 
@@ -232,7 +233,7 @@
             this.btnCancelreservation.Name = "btnCancelreservation";
             this.btnCancelreservation.Size = new System.Drawing.Size(139, 69);
             this.btnCancelreservation.TabIndex = 2;
-            this.btnCancelreservation.Text = "Cancel\r\nBooking";
+            this.btnCancelreservation.Text = "Room Arrangements";
             this.btnCancelreservation.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnCancelreservation.UseVisualStyleBackColor = false;
             this.btnCancelreservation.Click += new System.EventHandler(this.btnCancelreservation_Click);
@@ -293,7 +294,7 @@
             this.pnlRoombooking.Controls.Add(this.txtNoofadults);
             this.pnlRoombooking.Controls.Add(this.btnUpdate);
             this.pnlRoombooking.Controls.Add(this.btnClear);
-            this.pnlRoombooking.Controls.Add(this.txtNic);
+            this.pnlRoombooking.Controls.Add(this.txtNIC);
             this.pnlRoombooking.Controls.Add(this.lblcusid);
             this.pnlRoombooking.Controls.Add(this.cmbMrMrs);
             this.pnlRoombooking.Controls.Add(this.label1);
@@ -329,7 +330,6 @@
             this.pnlRoombooking.Name = "pnlRoombooking";
             this.pnlRoombooking.Size = new System.Drawing.Size(1331, 635);
             this.pnlRoombooking.TabIndex = 1;
-            this.pnlRoombooking.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlRoombooking_Paint);
             // 
             // txtNoofadults
             // 
@@ -359,14 +359,13 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
-            // txtNic
+            // txtNIC
             // 
-            this.txtNic.Location = new System.Drawing.Point(280, 316);
-            this.txtNic.Multiline = true;
-            this.txtNic.Name = "txtNic";
-            this.txtNic.Size = new System.Drawing.Size(229, 29);
-            this.txtNic.TabIndex = 85;
-            this.txtNic.Text = "\r\n\r\n";
+            this.txtNIC.Location = new System.Drawing.Point(280, 316);
+            this.txtNIC.Multiline = true;
+            this.txtNIC.Name = "txtNIC";
+            this.txtNIC.Size = new System.Drawing.Size(229, 29);
+            this.txtNIC.TabIndex = 85;
             // 
             // lblcusid
             // 
@@ -460,7 +459,6 @@
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(214, 30);
             this.txtMobile.TabIndex = 73;
-            this.txtMobile.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // rbFemale
             // 
@@ -1245,7 +1243,7 @@
         public System.Windows.Forms.TextBox txtEmail;
         public System.Windows.Forms.TextBox txtAddress;
         public System.Windows.Forms.TextBox txtLastname;
-        public System.Windows.Forms.TextBox txtNic;
+        public System.Windows.Forms.TextBox txtNIC;
         public System.Windows.Forms.TextBox txtNoofadults;
         public System.Windows.Forms.Panel pnlRoombooking;
         public System.Windows.Forms.Panel pnlHallbooking;

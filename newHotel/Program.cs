@@ -16,7 +16,7 @@ namespace newHotel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GenerateQuotaions());
+            Application.Run(new Form1());
         }
     }
 }
